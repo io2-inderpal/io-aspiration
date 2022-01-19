@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Listing & Internal Styling</title>
+  </head>
+  <!--for Inernal of exteraml styling we use SELECTORS-->
+
+  <!--Selectors are of three types-->
+  <!-- 1. class -> for class we use dot ( . ) -->
+  <!-- 2. Id    -> for id we use hash   ( # )  -->
+  <!-- 3. Tag   -> for tag we use tag   ( div, h1, p) -->
+  <style>
+    /* styling body */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 95vh;
+    }
+
+    /* main-div */
+    .main-div {
+      height: fit-content;
+      background-color: black;
+      color: whitesmoke;
+      height: 100%;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /*Main title*/
+    .main-h2 {
+      background-color: yellow;
+      color: black;
+      border: 3px dotted red;
+      border-radius: 20px;
+      width: 30%;
+      margin-left: 30% !important;
+      margin-bottom: 10px !important;
+      margin: 0;
+      padding: 0px 0px 5px 30px;
+    }
+
+    /* Selecting all h3 tags */
+    h3 {
+      margin: 5px 0 5px 25px;
+    }
+
+    /* Horizontal line -hr tag */
+    .horizontal-line {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Selecting 1st div with id*/
+    #subjects {
+      background-color: violet;
+      color: blue;
+      border: 3px dashed yellow;
+      margin-left: 30%;
+      width: 30%;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Selecting 2nd div with id*/
+    #avengers {
+      background-color: rgb(147, 36, 221);
+      color: rgb(174, 216, 78);
+      border: 3px dotted rgb(202, 19, 19);
+      margin-left: 30%;
+      width: 30%;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Selecting 3rd div with id*/
+    #superheroes {
+      background-color: rgb(116, 30, 116);
+      color: rgb(166, 166, 226);
+      border: 3px solid rgb(68, 68, 36);
+      margin-left: 30%;
+      width: 30%;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* Selecting all spans */
+    span {
+      color: white;
+    }
+  </style>
+
+  <body>
+    <div class="main-div">
+      <h2 class="main-h2">I'm learning Listing and internal styling</h2>
+
+      <!-- First Div for un-order list -->
+      <div id="subjects" class="list-division">
+        <h3 class="subject-heading">My favorite subjects</h3>
+        <hr class="horizontal-line" />
+        <!--
+            ul == unorder list
+        It is used to create list with bullets
+        -->
+        <ul class="unorder-list">
+          <!--li == list-->
+          <li class="list" id="html">HTML</li>
+          <li class="list" id="css">CSS</li>
+          <li class="list" id="bootstrap">Bootstrap</li>
+          <li class="list" id="javasript">Javascript</li>
+          <li class="list" id="es6">ES6</li>
+          <li class="list" id="reactjs">ReactJS</li>
+          <li class="list" id="redux">Redux</li>
+          <li class="list" id="mui">Material-UI</li>
+        </ul>
+      </div>
+
+      <!--Second Div for order list-->
+      <div id="avengers" class="list-division">
+        <!--ol == order list-->
+        <!--used when we need listing with serial numbers-->
+        <h3>My favorite Avengers</h3>
+
+        <hr class="horizontal-line" />
+
+        <ol class="orderlist" id="avengers-ol">
+          <li class="avenger" id="thor">Thor: <span>God of Thunder</span></li>
+          <li class="avenger" id="hulk">
+            Hulk: <span>Gamma radioactive</span>
+          </li>
+          <li class="avenger" id="ironman">
+            Iron-man: <span>Man of steel and Jarvis</span>
+          </li>
+          <li class="avenger" id="captian-america">
+            Captian America: <span>Undefeatble Soldier</span>
+          </li>
+          <li class="avenger" id="black">
+            Black widow: <span>Clever and brave</span>
+          </li>
+          <li class="avenger" id="hawk">
+            Hawk-eye: <span>Unbreakable Aim</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="list-division" id="superheroes">
+        <h3 class="superheroes" id="superheroes-title">
+          My favorite superheroes
+        </h3>
+
+        <hr class="horizontal-line" />
+
+        <!--OL with start number-->
+        <ol start="9" class="orderlist" id="superheroes-ol">
+          <li class="superhero" id="spdereman">Spider-man</li>
+          <li class="superhero" id="batman">Bat-Man</li>
+          <li class="superhero" id="superman">Super-Man</li>
+          <li class="superhero" id="shaktiman">Shaktiman</li>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>
