@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>style sheet</title>
+
+    </head>
+    <style>
+*{
+    margin: 0%;
+    padding: 0%;
+}
+li{background-color: black;
+color: aliceblue;
+width: 60px;
+height: 20px;
+padding-left: 10px;
+list-style: none;
+}
+#style{
+    margin-top: 0px;
+}
+.main ul {display: flex;
+flex-direction: row;}
+.main{
+    width: 99%;
+    height: 20px;
+    background-color: darkcyan;
+    border: 2px solid red;
+
+    margin-top: 10px;
+}
+.child1{
+height: 50%;
+width: 99%;
+background-color: aquamarine;
+display: flex;
+flex-direction: row;
+}
+.child2{
+    height: 20%;
+    width: 20%;
+    border: 2px solid black;
+    padding: 10px;
+}
+    </style>
+    <body>
+        <nav>
+        <div class="main">
+            <ul>
+<li class="file" id="style">file</li>
+<li class="edit" id="style">edit</li>
+<li class="selection" id="style">selection</li>
+<li class="view" id="style">view</li>
+<li class="go" id="style">go</li>
+<li class="run"id="style">run</li>
+<li class="terminal" id="style">terminal</li>
+<li class="help" id="style">help</li>
+</ul></div>
+    </nav>
+    <div class="child1">
+        <div class="child2">1</div>
+        <div class="child2">2</div>
+        <div class="child2">3</div>
+        <div class="child2">4</div>
+        <div class="child2">5</div>
+    </div>
+    </body>
+</html>
