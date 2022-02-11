@@ -19,15 +19,31 @@
 		width: 400px;
 		height: 30px;
 		border: 2px solid black;
-		animation: loader;
-		
+		/* position: relative; */
+	}
+	.main .child .child2{width: 30px;
+		height: 25px;
+		background-color: chartreuse;
+			box-shadow: 2px 2px gold;
+animation: loader 2s infinite;
+animation-direction:alternate-reverse;
+
 
 	}
-	@keyframes l	}
+	@keyframes loader{
+		0%{width: 0%;}
+		100%{width: 100%;}
+	}
+	
+	
+	
 	</style>
 	<body>
 		<div class="main">
-			<div class="child"></div>
+			<div class="child"><div class="child2"></div>
+		<h2>loading....</h2></div>
+	
 		</div>
+		
 	</body>
 </html>
