@@ -1,0 +1,79 @@
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(194, 217, 238);
+  display: grid;
+  grid-template-rows: 60px 60px 60px repeat(12, 39px);
+  grid-template-columns: 2fr 12fr 0.5fr;
+  grid-gap: 1px;
+}
+.div-1 {
+  background-color: rgb(245, 247, 242);
+  grid-column: 1/-1;
+  align-items: center;
+  position: relative;
+}
+img {
+  width: 110px;
+  height: 45px;
+  align-items: center;
+  position: absolute;
+  top: 6px;
+  left: 45px;
+}
+.child-1 {
+}
+.div-2 {
+  background-color: rgb(245, 247, 242);
+  grid-row: 2/19;
+}
+.div-3 {
+  background-color: rgb(245, 247, 242);
+  /* grid-row: 2/-1; */
+  /* grid-column: 4/5; */
+  /* text-align: center; */
+}
+.div-4 {
+  background-color: rgb(245, 247, 242);
+  grid-column: 3/4;
+  grid-row: 2/19;
+}
+.div-5 {
+  background-color: rgb(245, 247, 242);
+}
+.div-6 {
+  background-color: rgb(245, 247, 242);
+}
+.div-7 {
+  background-color: rgb(245, 247, 242);
+}
+.div-8 {
+  background-color: rgb(245, 247, 242);
+}
+.div-9 {
+  background-color: rgb(245, 247, 242);
+}
+.div-10 {
+  background-color: rgb(245, 247, 242);
+}
+.div-11 {
+  background-color: rgb(245, 247, 242);
+}
+.div-12 {
+  background-color: rgb(245, 247, 242);
+}
+.div-13 {
+  background-color: rgb(245, 247, 242);
+}
+.div-14 {
+  background-color: rgb(245, 247, 242);
+}
+.div-15 {
+  background-color: rgb(245, 247, 242);
+}
+.div-16 {
+  background-color: rgb(245, 247, 242);
+}
+.div-17 {
+  background-color: rgb(245, 247, 242);
+}
