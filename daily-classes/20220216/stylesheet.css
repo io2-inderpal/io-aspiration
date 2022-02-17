@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(156, 102, 32);
+}
+.hulk-card {
+  background-image: url(avenger.jpg);
+  background-color: rgba(0, 0, 0, 0.288);
+  color: rgb(231, 10, 10);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
