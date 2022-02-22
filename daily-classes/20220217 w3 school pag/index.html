@@ -2,9 +2,133 @@
 <html>
   <head>
     <title>w3 school pag</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
-  <style></style>
+  <style>
+    body {
+      background-color: blueviolet;
+    }
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      padding: 10px;
+      margin-left: 20px;
+    }
+    main {
+      width: 100%;
+      height: 100vh;
+      background-color: white;
+    }
+    div {
+      width: 100%;
+      height: 70px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    select {
+      border: none;
+    }
+    .child {
+      width: 95%;
+    }
+    .child-3 {
+      width: 100%;
+      height: 70%;
+      background-color: rgb(41, 37, 37);
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .extra {
+      width: 30%;
+    }
+  </style>
   <body>
-    <div class="main"></div>
+    <main>
+      <div class="main">
+        <div class="child">
+          <img src="w3-icon.png" alt="w3-icon" />
+          <label for="type">Tutorial</label>
+          <select>
+            <option value="type"></option>
+          </select>
+          <label for="type">References</label>
+          <select>
+            <option value="type"></option>
+          </select>
+          <label for="type">Exercises</label>
+          <select>
+            <option value="type"></option>
+          </select>
+          <p>
+            Videos
+            <span
+              style="
+                border: 1px solid black;
+                border-radius: 8px;
+                font-size: small;
+              "
+              >New</span
+            >
+          </p>
+        </div>
+        <div class="extra"></div>
+        <div class="chile-2" id="icon">
+          <i class="fa-solid fa-earth-americas"></i>
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p
+            style="
+              background-color: blueviolet;
+              border-radius: 50px;
+              width: 126px;
+              height: 32px;
+              padding: 4px;
+            "
+          >
+            Website
+            <span
+              style="
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 8px;
+                font-size: small;
+                font-weight: 100;
+              "
+              >New</span
+            >
+          </p>
+          <p>Paid courses</p>
+          <h4
+            style="
+              background-color: rgb(119, 250, 119);
+              border-radius: 14px;
+              width: 74px;
+              height: 37px;
+              padding: 6px;
+              padding-left: 10px;
+            "
+          >
+            Login
+          </h4>
+        </div>
+      </div>
+      <header class="child-3">
+        <h1>Learn to Code</h1>
+        <span>With the world's largest web developer site.</span>
+      </header>
+    </main>
   </body>
 </html>
