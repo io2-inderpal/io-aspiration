@@ -1,0 +1,45 @@
+.main-nav-bar {
+  position: relative;
+}
+.search-box {
+  position: absolute;
+  right: 53%;
+  width: 450px;
+}
+.menu-bar {
+  position: absolute;
+  left: 48%;
+}
+.brand-logo {
+  font-size: 38px;
+  font-weight: 700;
+  background-color: blue;
+  color: white !important;
+  height: 59px;
+
+  padding: 0px 9px 10px 9px;
+  border-radius: 13px;
+}
+.search-button {
+  border-radius: 50px;
+}
+.icons {
+  display: grid;
+  text-align: center;
+}
+.dd {
+  padding-top: 15px;
+}
+.premium-free {
+  position: absolute;
+  left: 87%;
+  width: 110px;
+  color: orange;
+}
+.job-data {
+  list-style-type: none;
+}
+.nav-button {
+  display: flex;
+  flex-direction: row;
+}
