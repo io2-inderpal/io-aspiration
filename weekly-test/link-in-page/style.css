@@ -41,5 +41,33 @@
 }
 .nav-button {
   display: flex;
-  flex-direction: row;
+}
+.profile-data {
+  background-color: beige;
+  margin-top: 10px;
+  margin-left: 22px;
+  height: fit-content;
+  padding: 25px 0px;
+  width: 20%;
+  color: rgb(75, 69, 69);
+  border-radius: 5px;
+  font-size: small;
+  font-weight: 700;
+  box-shadow: 2px 2px 5px grey;
+}
+#list-icon {
+  padding-top: 20px;
+}
+.job-searcher {
+  margin-top: 10px;
+  background-color: beige;
+  margin-left: 20px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px grey;
+}
+#searcher-input {
+  list-style: none;
+  height: 30px;
+  padding-top: 10px;
 }

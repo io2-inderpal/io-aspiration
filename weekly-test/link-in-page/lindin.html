@@ -117,14 +117,16 @@
             </li>
           </ul>
           <form class="d-flex search-box">
-            <i class="fa-solid fa-location-dot"></i>
+            <i
+              class="fa-solid fa-location-dot"
+              style="position: absolute; top: 11px; color: rgb(117, 114, 114)"
+            ></i>
             <input
               class="form-control me-2"
               type="search"
               placeholder="City,state, or zip c.."
               aria-label="search "
-            /><i class="fa-solid fa-magnifying-glass"></i
-            ><input
+            /><input
               class="form-control me-2"
               type="search"
               placeholder="Search by title skill"
@@ -145,23 +147,48 @@
 	========================================================= -->
     <div class="container profils">
       <div class="row">
-        <div class="col-lg-3 col-md-12">
+        <div class="col-lg-3 col-md-12 profile-data">
           <ul class="job-data">
-            <li><i class="fa-solid fa-bookmark"></i>&nbsp;Job</li>
-            <li><i class="fa-solid fa-bell"></i>&nbsp;Job Alert</li>
-            <li><i class="fa-solid fa-money-bill-1"></i>&nbsp;salary</li>
-            <li>
+            <li id="list-icon">
+              <i class="fa-solid fa-bookmark"></i>&nbsp;Job
+            </li>
+            <li id="list-icon">
+              <i class="fa-solid fa-bell"></i>&nbsp;Job Alert
+            </li>
+            <li id="list-icon">
+              <i class="fa-solid fa-money-bill-1"></i>&nbsp;salary
+            </li>
+            <li id="list-icon">
               <i class="fa-solid fa-clipboard-check"></i>&nbsp;Skill assessments
             </li>
-            <li><i class="fa-solid fa-file"></i>&nbsp;Interview prep</li>
-            <li><i class="fa-solid fa-file"></i>&nbsp;Resume builder</li>
-            <li>
+            <li id="list-icon">
+              <i class="fa-solid fa-file"></i>&nbsp;Interview prep
+            </li>
+            <li id="list-icon">
+              <i class="fa-solid fa-file"></i>&nbsp;Resume builder
+            </li>
+            <li id="list-icon">
               <i class="fa-brands fa-youtube"></i>&nbsp;job seeker guidance
             </li>
-            <li><i class="fa-solid fa-gear"></i>&nbsp;Application setting</li>
+            <li id="list-icon">
+              <i class="fa-solid fa-gear"></i>&nbsp;Application setting
+            </li>
           </ul>
         </div>
-        <div class="col-6"></div>
+        <!-- ======================================================== -->
+        <!-- -----------------to suggested job searcher-------------- -->
+        <!-- ========================================================== -->
+        <div class="col-6 job-searcher">
+          <h6>suggested job searcher</h6>
+          <button
+            type="button"
+            class="btn-close close-button"
+            aria-label="Close"
+          ></button>
+        </div>
+        <!-- ======================================================== -->
+        <!-- -----------------to suggested job searcher end-------------- -->
+        <!-- ========================================================== -->
         <div class="col-3"></div>
       </div>
     </div>
