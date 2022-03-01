@@ -65,9 +65,15 @@
   height: 200px;
   border-radius: 5px;
   box-shadow: 2px 2px 5px grey;
+  position: relative;
 }
 #searcher-input {
   list-style: none;
   height: 30px;
   padding-top: 10px;
+}
+.close-button {
+  position: absolute;
+  left: 92%;
+  top: 10px;
 }
