@@ -77,3 +77,12 @@
   left: 92%;
   top: 10px;
 }
+#search-all {
+  display: inline-block;
+  border: 2px solid blue;
+  border-radius: 20px;
+  color: blue;
+  margin: 2px;
+  margin-top: 5px;
+  padding: 3px;
+}
