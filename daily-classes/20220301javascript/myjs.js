@@ -240,9 +240,83 @@
 // for (var num = 0; num <= limt; num++) {
 //   console.log(table, "*", num, "=", table * num);
 // }
-const m = prompt("type month");
-switch (m) {
-  case "jan":
-    console.log("january");
-    break;
-}
+// const m = prompt("type month");
+// switch (m) {
+//   case "jan":
+//     console.log("january");
+//     break;
+// }
+const options = (optn) => {
+  const option = prompt(`Enter any option`);
+  switch (Number(option)) {
+    case 1:
+      findEvenOdd();
+      break;
+
+    case 2:
+      leapYear();
+      break;
+    case 3:
+      factorial();
+      break;
+
+    case 4:
+      calculation();
+      break;
+    case 5:
+      powerOfNumber();
+
+      break;
+    default:
+      document.write(`You entered a wrong input`);
+      break;
+  }
+};
+const findEvenOdd = (even) => {
+  const num = prompt(`Enter the even/odd value`);
+  let value = num % 2;
+  document.write(value == 0 ? `${num} is even value` : `${num} is a odd value`);
+};
+// findEvenOdd();
+const leapYear = (years) => {
+  const year = prompt(`Enter the leap year`);
+  document.write(
+    year % 4 == 0 ? `${year} is a leap year` : `${year} is not a leap year`
+  );
+};
+// leapYear();
+
+const factorial = (no) => {
+  const number = prompt(`Enter the factorial number`);
+  let facNum = 1;
+  for (let i = 1; i <= number; i++) {
+    if (i < number) {
+      facNum = facNum * (number - i);
+    }
+    if (i == number) {
+      facNum = facNum * number;
+    }
+  }
+  document.write(`The factorial is ${number} and value  ${facNum}`);
+};
+// factorial();
+
+const powerOfNumber = (a, b) => {
+  const numVal = prompt("type any number value for power");
+  const power = prompt("type any value power");
+  let pow = 1;
+  for (let i = 1; i <= power; i++) {
+    pow = pow * numVal;
+  }
+  document.write(`The power value ${numVal} is ${pow}`);
+};
+// powerOfNumber();
+const calculation = (tbl) => {
+  const table = prompt(`Type a table`);
+  document.write("The table is ", table, "<br/>");
+  for (let i = 1; i <= 10; i++) {
+    document.write(table, "x", i, "=", table * i, "<br/>");
+  }
+};
+// calculation();
+options();
