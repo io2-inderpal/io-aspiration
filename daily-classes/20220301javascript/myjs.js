@@ -319,4 +319,69 @@ const calculation = (tbl) => {
   }
 };
 // calculation();
-options();
+// options();
+//----------------------------------------------------------
+//Exercise 1: Javascript exercises on String : Welcome User
+//----------------------------------------------------------
+
+const firstName = prompt("Enter the first name");
+const lastName = prompt("Enter the last name");
+document.write(`1. Wel come <b> ${firstName} ${lastName} <b>`);
+
+//---------------------------------------------------
+//Exercise 2: Check whether or not a string is blank
+//---------------------------------------------------
+
+function isBlank(Hello) {
+  const hlo = "";
+  console.log(`value is-->${hlo}`);
+}
+isBlank("");
+
+//---------------------------------------------------------
+//Exercise 3: Split a string and convert it to an array
+//----------------------------------------------------------
+let myName = "inderpal sharma";
+myName = myName.split(" ");
+document.write(`</br>3. <b>Split-returns an array-> </b> ${myName} `);
+console.log(`</br> <b>Split-returns an array-> </b> ${myName} `);
+
+//----------------------------
+//Exercise 4: Compare Strings
+//----------------------------
+
+const passWord = prompt(`Enter a password`);
+const conform = prompt(` Enter the conform password`);
+if (passWord === conform) {
+  document.write(`</br>4. password is match`);
+} else {
+  document.write(`</br>4. password is not match`);
+}
+//--------------------------------------------------
+// Exercise 5:: Calculate the length of the string
+//--------------------------------------------------
+
+const name = prompt(`Enter your name`);
+
+document.write(
+  ` </br>5. My name is--> ${name}</br> my name length is -->${name.length}`
+);
+
+//---------------------------------------------------
+//Exercise 6:: Calculate the length of the string
+//---------------------------------------------------
+
+let word = "Pneumonoultramicroscopicsilicovolcanoconiosis";
+document.write(`</br>6. ${word} is this length is --> ${word.length}`);
+
+//--------------------------------
+//Exercise 7: Reverse the string
+//--------------------------------
+
+let myNikName = "Ravi Sharma";
+let reverse = myNikName.split("");
+let join = reverse.reverse();
+let str = join.join("");
+document.write(
+  `</br>7. my name is ${myNikName} and reverse name is<b> ${str} </b>`
+);
