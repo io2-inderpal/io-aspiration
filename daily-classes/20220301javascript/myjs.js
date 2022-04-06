@@ -324,9 +324,9 @@ const calculation = (tbl) => {
 //Exercise 1: Javascript exercises on String : Welcome User
 //----------------------------------------------------------
 
-const firstName = prompt("Enter the first name");
-const lastName = prompt("Enter the last name");
-document.write(`1. Wel come <b> ${firstName} ${lastName} <b>`);
+// const firstName = prompt("Enter the first name");
+// const lastName = prompt("Enter the last name");
+// document.write(`1. Wel come <b> ${firstName} ${lastName} <b>`);
 
 //---------------------------------------------------
 //Exercise 2: Check whether or not a string is blank
@@ -350,22 +350,22 @@ console.log(`</br> <b>Split-returns an array-> </b> ${myName} `);
 //Exercise 4: Compare Strings
 //----------------------------
 
-const passWord = prompt(`Enter a password`);
-const conform = prompt(` Enter the conform password`);
-if (passWord === conform) {
-  document.write(`</br>4. password is match`);
-} else {
-  document.write(`</br>4. password is not match`);
-}
+// const passWord = prompt(`Enter a password`);
+// const conform = prompt(` Enter the conform password`);
+// if (passWord === conform) {
+//   document.write(`</br>4. password is match`);
+// } else {
+//   document.write(`</br>4. password is not match`);
+// }
 //--------------------------------------------------
 // Exercise 5:: Calculate the length of the string
 //--------------------------------------------------
 
-const name = prompt(`Enter your name`);
+// const name = prompt(`Enter your name`);
 
-document.write(
-  ` </br>5. My name is--> ${name}</br> my name length is -->${name.length}`
-);
+// document.write(
+//   ` </br>5. My name is--> ${name}</br> my name length is -->${name.length}`
+// );
 
 //---------------------------------------------------
 //Exercise 6:: Calculate the length of the string
@@ -385,3 +385,5 @@ let str = join.join("");
 document.write(
   `</br>7. my name is ${myNikName} and reverse name is<b> ${str} </b>`
 );
+let newArray = ["ravi", "lucky", "babu", "goldy", "rocky"];
+console.log("this is array", newArray);
