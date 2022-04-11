@@ -6,6 +6,12 @@
 // console.log(isArray(‘I am a string.)); output- false
 // console.log(isArray([1, 2, 4, 0, ‘array’])); output- true
 //----------------------------------------------------------------------------
+const array = [1, 2, 4, 0, "array"];
+const string = "I am a string";
+const result = array != string && length >= 0;
+const result2 = string != array && length > 0;
+console.log(result);
+console.log(result2);
 
 //---------------------------------
 //3. Find the length of following
@@ -17,24 +23,24 @@
 // e. ['Monday', 90, false, undefined, ‘90’, ‘g’, ‘CAT]
 //------------------------------------------------------------------------------------
 
-// const a = [5, 12, 8, 130, 44];
-// console.log(a.length);
-// const b = ["g", "e", "e", "k", "s"];
-// console.log(b.length);
-// const c = ["shoes", "shirts", "socks", "sweaters"];
-// console.log(c.length);
-// const d = [
-//   "Sunday",
-//   "Monday",
-//   "Tuesday",
-//   "Wednesday",
-//   "Thursday",
-//   "Friday",
-//   "Saturday",
-// ];
-// console.log(d.length);
-// const e = ["Monday", 90, false, undefined, 90, g, CAT];
-// console.log(e.length);
+const a = [5, 12, 8, 130, 44];
+console.log(a.length);
+const b = ["g", "e", "e", "k", "s"];
+console.log(b.length);
+const c = ["shoes", "shirts", "socks", "sweaters"];
+console.log(c.length);
+const d = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+console.log(d.length);
+const e = ["Monday", 90, false, undefined, 90, "g", "CAT"];
+console.log(e.length);
 
 //-----------------------------------------
 // 4. Find the element at ( use at, [ ])
@@ -46,22 +52,26 @@
 // d. ['g', 'e', 'e', 'k', 's'] at 10th position
 //-------------------------------------------------------------------
 
-// const days = [
-//   "Sunday",
-//   "Monday",
-//   "Tuesday",
-//   "Wednesday",
-//   "Thursday",
-//   "Friday",
-//   "Saturday",
-// ];
-// console.log(days[2]);
-// const cloth = ["shoes", "shirts", "socks", "sweaters"];
-// console.log(cloth[3]);
-// const mix = ["Monday", 90, false, undefined, "90", "g", "CAT"];
-// console.log(mix.at(4));
-// const alpha = ["g", "e", "e", "k", "s"];
-// console.log(alpha.at(9));
+const days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+console.log(days);
+console.log("find element is days 3rd", days[2]);
+const cloth = ["shoes", "shirts", "socks", "sweaters"];
+console.log(cloth);
+console.log("find element is cloth 4th", cloth[3]);
+const mix = ["Monday", 90, false, undefined, "90", "g", "CAT"];
+console.log(mix);
+console.log("find element is mixed 5th", mix.at(4));
+const alpha = ["g", "e", "e", "k", "s"];
+console.log(alpha);
+console.log("find element is alphabet 10th", alpha.at(9));
 
 //---------------------------
 // 5. Add two array (concat)
@@ -153,7 +163,12 @@ console.log(`e5 revers value is ==> ${e5.reverse()}`);
 
 const a8 = [210, "Sunday", 702, true, null, "90", "vinay", "CAT"];
 const findIndexIs = a8.findIndex((value) => value == "Ajay");
+const findIndexIs1 = a8.findIndex((value) => value == 90);
+const findIndexIs2 = a8.findIndex((value) => value == true);
+console.log(a8);
 console.log(`find index is ${findIndexIs}`);
+console.log(`find index is ${findIndexIs1}`);
+console.log(`find index is ${findIndexIs2}`);
 const b8 = [
   "Sunday",
   "Monday",
@@ -163,8 +178,24 @@ const b8 = [
   "Friday",
   "Saturday",
 ];
+const findIndex2 = b8.findIndex((day) => day == "Thursday");
+const findIndex3 = b8.findIndex((day) => day == "Tuesday");
+const findIndex4 = b8.findIndex((day) => day == "funday");
+const findIndex5 = b8.findIndex((day) => day == "Monday");
+console.log(b8);
+console.log(`Thursday index is ${findIndex2}`);
+console.log(`Tuesday index is ${findIndex3}`);
+console.log(`funday index is ${findIndex4}`);
+console.log(`Monday index is ${findIndex5}`);
 
 const c8 = ["z", "i", "a", "x", "k", "s"];
+const findIndexC8 = c8.findIndex((alphabet) => alphabet == "k");
+const findIndexC81 = c8.findIndex((alphabet) => alphabet == "t");
+const findIndexC82 = c8.findIndex((alphabet) => alphabet == "a");
+console.log(c8);
+console.log(`k index is ${findIndexC8}`);
+console.log(`t index is ${findIndexC81}`);
+console.log(`a index is ${findIndexC82}`);
 const d8 = [115, 54, 101, -52, -10, 0.56, 5, 12, 8, 130, 44];
 const e8 = ["shoes", "shirts", "socks", "sweaters"];
 
@@ -180,6 +211,42 @@ const e8 = ["shoes", "shirts", "socks", "sweaters"];
 // 54,0.56, 81)
 // e. ['shoes', 'shirts', 'socks', 'sweaters'] find index of (‘shoes’,’socks’,
 // ‘Sweaters’)
+const lastIndex1 = [210, "Sunday", 702, true, null, "90", "vinay", "CAT"];
+const lastIndex2 = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const lastIndex3 = ["z", "i", "a", "x", "k", "s"];
+const lastIndex4 = [115, 54, 101, -52, -10, 0.56, 5, 12, 8, 130, 44];
+const lastIndex5 = ["shoes", "shirts", "socks", "sweaters"];
+console.log(lastIndex1);
+const answer1 = lastIndex1.lastIndexOf("vinay");
+const answer2 = lastIndex1.lastIndexOf(null);
+const answer3 = lastIndex1.lastIndexOf("Ajay");
+console.log("this is value of last index", answer1);
+console.log("this is value of last index", answer2);
+console.log("this is value of last index", answer3);
+console.log(lastIndex2);
+const answer11 = lastIndex2.lastIndexOf("Tuesday");
+const answer22 = lastIndex2.lastIndexOf("TuesDay");
+const answer33 = lastIndex2.lastIndexOf("Funday");
+const answer44 = lastIndex2.lastIndexOf("Wednesday");
+console.log(`this is value of last index ${answer11}`);
+console.log(`this is value of last index ${answer22}`);
+console.log(`this is value of last index ${answer33}`);
+console.log(`this is value of last index ${answer44}`);
+console.log(lastIndex3);
+const answerA = lastIndex3.lastIndexOf("k");
+const answerB = lastIndex3.lastIndexOf("t");
+const answerC = lastIndex3.lastIndexOf("z");
+console.log(
+  `1st value last index of ${answerA} 2nd value last index of ${answerB} 3nd value last index of ${answerC}`
+);
 //------------------------------------------------------------------------------------------
 // 10. Find the index in the arrays. [314,115, 54, 101, -52, -10, 0.56, 5, 12, 8, 130, 44]
 //-------------------------------------------------------------------------------------------
@@ -188,12 +255,36 @@ const e8 = ["shoes", "shirts", "socks", "sweaters"];
 // c. If element is less than 0
 // d. If element is equal to 8
 // e. If element is equal to 11 OR 12
+
 //--------------------------------------------------
 // 11. Please verify if following includes in array
 //--------------------------------------------------
 // a. [ 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ]
 // (‘Sunday’, ‘wednesday’, ‘Friday’)
 // b. [101, -52, -10, 0.56, 5] if includes → (5, 8, ‘10’, 100+1, 10-5)
+
+const includes = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+const includes2 = [101, -52, -10, 0.56, 5];
+console.log(includes);
+const inValue = includes.includes("Sunday");
+const inValue1 = includes.includes("wednesday");
+const inValue2 = includes.includes("Friday");
+console.log(inValue, inValue1, inValue2);
+console.log(includes2);
+const inNum1 = includes2.includes(5);
+const inNum2 = includes2.includes(8);
+const inNum3 = includes2.includes("10");
+const inNum4 = includes2.includes(100 + 1);
+const inNum5 = includes2.includes(10 - 5);
+console.log(inNum1, inNum2, inNum3, inNum4, inNum5);
 //------------------------------------------------
 // 12. Please Insert the element at end of array
 //------------------------------------------------
