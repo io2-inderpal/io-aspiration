@@ -69,7 +69,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 16%;
+  margin-top: 20%;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -104,6 +104,12 @@ h2 {
 }
 .main-cb {
   background-color: rgb(241, 239, 233);
+  position: absolute;
+  left: 6rem;
+  height: 5.1rem;
+  top: -1.9px;
+  padding-left: 1rem;
+  width: 14rem;
 }
 .card-boddy {
   width: 20rem;
@@ -131,16 +137,43 @@ h2 {
   .logo {
     padding-left: 5rem;
   }
+  .card-boddy {
+    width: 12rem;
+    height: 5rem;
+  }
+  .main-cb {
+    position: absolute;
+    left: 6rem;
+    height: 5.1rem;
+    top: -1.9px;
+    padding-left: 1rem;
+    width: 10rem;
+  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 45%;
   }
   .menu {
-    margin-top: 20%;
+    margin-top: 22%;
   }
   .search-bar {
     top: 7rem;
+  }
+  .card-boddy {
+    width: 12rem;
+    height: 5rem;
+  }
+  .logo {
+    padding-left: 3rem;
+  }
+  .main-cb {
+    position: absolute;
+    left: 6rem;
+    height: 5.1rem;
+    top: -1.9px;
+    padding-left: 1rem;
+    width: 10rem;
   }
 }
 
@@ -158,8 +191,16 @@ h2 {
     padding-left: 3.5rem;
   }
   .card-boddy {
-    width: 16rem;
+    width: 14rem;
     height: 5rem;
+  }
+  .main-cd {
+    position: absolute;
+    left: 6rem;
+    height: 5.1rem;
+    top: -1.9px;
+    padding-left: 1rem;
+    width: 12rem;
   }
 }
 
@@ -180,5 +221,13 @@ h2 {
   .card-boddy {
     width: 15rem;
     height: 5rem;
+  }
+  .main-cb {
+    position: absolute;
+    left: 6rem;
+    height: 5.1rem;
+    top: -1.9px;
+    padding-left: 1rem;
+    width: 9rem;
   }
 }
