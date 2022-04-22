@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>map in js</title>
+  </head>
+  <body>
+    <h1>We are learning Array</h1>
+    <script>
+      //2. If the given input is an array of numbers, return the sum of all the positive ones.
+      // If the array is empty or there aren't any positive numbers, return 0.
+      // a. Example :
+      // input:const input = [ 1, -4, 12, 0, -3, 29, -150];
+      // Output: 42
+      const factorial = (no) => {
+        const number = prompt(`Enter the factorial number`);
+        let facNum = 1;
+        for (let i = 1; i <= number; i++) {
+          if (i < number) {
+            facNum = facNum * (number - i);
+          }
+          if (i == number) {
+            facNum = facNum * number;
+          }
+        }
+        document.write(`The factorial is ${number} and value  ${facNum}`);
+      };
+      //   factorial();
+      //     Find the factorial of
+      // a. 3
+      // b. 5
+      // c. 4
+      // d. 10
+    </script>
+  </body>
+</html>

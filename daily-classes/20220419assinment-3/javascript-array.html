@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assainment</title>
+  </head>
+  <body>
+    <h1>Array & Object Assainment</h1>
+    <script>
+      // 1. print the age of candidates who are greater than 27
+      // 2. Make an array of accounting, sales, production, HR
+      // 3. concat all the array of following object-values
+      // 4. Replace Sally Green with Olivia Markson and age with 25
+      // 5. Add new member in production whose firstName= Denis, lastName=Mavis and age is 19
+      const data = {
+        accounting: [
+          { firstName: "John", lastName: "Doe", age: 23 },
+
+          { firstName: "Mary", lastName: "Smith", age: 32 },
+        ],
+        sales: [
+          { firstName: "Sally", lastName: "Green", age: 27 },
+
+          { firstName: "Jim", lastName: "Galley", age: 41 },
+        ],
+        production: [
+          { firstName: "James", lastName: "Blue", age: 37 },
+
+          { firstName: "Neena", lastName: "Ocs", age: 21 },
+        ],
+        HR: [
+          { firstName: "David", lastName: "Banzamin", age: 27 },
+
+          { firstName: "Oliver", lastName: "Franklin", age: 21 },
+        ],
+      };
+      const dataArray = Object.keys(data);
+      console.log("the value is ", dataArray);
+      const replace = data.sales[0];
+      const newAge = (replace.age = 25);
+      console.log("newage", newAge);
+      const concat = Object.values(data)
+        .flat()
+        .filter((age) => age.age > 27);
+      console.log(concat);
+
+      //       1. Kindly enter the values inside array
+      // a. Add ‘Pikachu’ at 3rd index [‘Bulbasaur’, ‘Charmander', ‘Butterfree’,
+      // ‘Charizard’, ‘Raticat’]
+      // b. Add 5 at 6th index, 10 at 7th index [10, 12,4,1.2,4.,58,5.6,78,14,69]
+
+      const pokimons = [
+        "Bulbasaur",
+        "Charmander",
+        "Butterfree",
+        "Charizard",
+        "Raticat",
+      ];
+      pokimons.splice(3, 0, "Pikachu");
+      console.log("add pikachu in array==>", pokimons);
+      const numberArray = [10, 12, 4, 1.2, 4, 58, 5.6, 78, 14, 69];
+      numberArray.splice(6, 0, 5);
+      numberArray.splice(7, 0, 10);
+      console.log(numberArray);
+      // 2. Find if any element in the given array is[13, 11, 15, 9, 7, 5, 8, 3, 1]
+      // a. Less than 12
+      // b. Even Number
+      // c. Less that 12 and even
+
+      // 3. Check if all elements in the array ["Banana", "Orange", "Apple",
+      // "Mango"] is
+      // a. Elements is greater than or equal to 5
+      // b. Contains ‘A’ or ‘a’
+      // c. Contains ‘i’
+      // d. Contains ‘n’
+
+      // 4. Check if any elements in the array ["Banana", "Orange", "Apple",
+      // "Mango"] is
+      // a. Elements is greater than or equal to 5
+      // b. Contains ‘A’ or ‘a’
+      // c. Contains ‘i’
+      // d. Contains ‘n’
+      // e. Contains ‘u’
+
+      // 5. Reverse the array
+      // a. [ 2, 4, 6, 8]
+      // b. ["Banana", "Orange",["Banana", "Orange", "Apple"],
+      // "Apple", "Mango"]
+      // c. ['h', 'e', 'l', 'l', 'o']
+
+      const assignment5 = [2, 4, 6, 8];
+
+      assignment5.reverse("");
+      console.log("the reverse assignment ==>", assignment5);
+
+      const assignment5b = [
+        "Banana",
+        "Orange",
+        ["Banana", "Orange", "Apple"],
+        "Apple",
+        "Mango",
+      ];
+      assignment5b.reverse("");
+      assignment5b[2].reverse("");
+      console.log("the reverse assignment ==>", assignment5b);
+      const assignment5c = ["h", "e", "l", "l", "o"];
+
+      assignment5c.reverse("");
+      console.log("the reverse assignment ==>", assignment5c);
+      // 6. Make ['h', 'e', 'l', 'l', 'o'] as hello
+      const alphaIs = ["h", "e", "l", "l", "o"];
+      const joinAlpha = alphaIs.join("");
+      console.log("the join alpha value is ==>", joinAlpha);
+      // 7. Make [40, 100, 1, 5, 25, 10] as 40100152510
+      const number1 = [40, 100, 1, 5, 25, 10];
+      const num2 = number1.join("");
+      console.log("the join number is===>", num2);
+      // 8. Remove all nested Arrays and make it single array
+      // a. [['01','Jan'],['02','Feb'],['03','Mar']]
+      // b. ['Jan', [[[['Feb'], 'Mar'], 'Apr'], [['May', 'June'],
+      // 'July'], 'Aug'], ['Sept', ['Oct']], ['Nov', ['Dec']]]
+      // c. [ [ [1,[11181]] ], [ [1,[111211]] ], [ [1,[1111, 123, 123,
+      // 123, 123, 123]] ], [ [1,[11711, 1323]] ], [ [1,[11117,
+      // 123]] ], [ [1,[15111, 1243]] ], [ [1,[164111, 123]] ], [
+      // [1,[1111, 121553]] ], [ [1,[1121, 12223]] ]]
+      const nestedArray = [
+        ["01", "Jan"],
+        ["02", "Feb"],
+        ["03", "Mar"],
+      ];
+      const nestedArray1 = [
+        "Jan",
+        [[[["Feb"], "Mar"], "Apr"], [["May", "June"], "July"], "Aug"],
+        ["Sept", ["Oct"]],
+        ["Nov", ["Dec"]],
+      ];
+      const removeNest = nestedArray.flat();
+      console.log("nested array==>", removeNest);
+      const removeNest1 = nestedArray1.flat();
+      const deepNest = removeNest1.flat();
+      console.log("nested array 2nd==>", deepNest.flat().flat());
+      const veryDeepNested = [
+        [[1, [11181]]],
+        [[1, [111211]]],
+        [[1, [1111, 123, 123, 123, 123, 123]]],
+        [[1, [11711, 1323]]],
+        [[1, [11117, 123]]],
+        [[1, [15111, 1243]]],
+        [[1, [164111, 123]]],
+        [[1, [1111, 121553]]],
+        [[1, [1121, 12223]]],
+      ];
+      const deepNested2 = veryDeepNested.flat();
+      console.log("very very deep nest===>", deepNested2.flat().flat().flat());
+      // 9. [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] change this
+      // is array like
+      // a. After 5th index all element will 0
+      // b. After 6th element all element will be x2
+      // c. Replace 10th element with ‘Vikings’
+      let number = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      ];
+      const newNumber = number
+        .filter((num) => num < 6)
+        .map((num, index) => index * 0);
+
+      const newNumber2 = number
+        .filter((num) => num < 7)
+        .map((num, index) => index + 1 * 2);
+      console.log("this is the number", newNumber2);
+
+      number.splice(9, 1, "vikings");
+      console.log("change", number);
+      // console.log("===.==>", num);
+      // 10. Create an Empty Array with length of 10, which has only
+      // one element.
+      // Array.of(element0);
+      const emptyArray = Array(10);
+      console.log("====>", emptyArray);
+
+      // 11. Create an Empty Array with length of 5, which has only one
+      // element.
+      const array = ["Apple", "", "", "", ""];
+      console.log(array);
+
+      // 12. Use some array Prototype to make following array
+      // a. ["Banana", "Orange", "Apple", "Mango"] to [ "Orange",
+      // "Apple", "Mango"] (use slice)
+      // b. ["Banana", "Orange", "Apple", "Mango"] to [ "Apple",
+      // "Mango"] (use slice)
+      // c. ["Cherry", "Litchi","Banana", "Orange", "Apple",
+      // "Mango"] to [ "Litchi","Banana", "Orange", "Apple",]
+      // (use slice)
+
+      const fruit1 = ["Banana", "Orange", "Apple", "Mango"];
+      const fruit2 = ["Banana", "Orange", "Apple", "Mango"];
+      const fruit3 = ["Cherry", "Litchi", "Banana", "Orange", "Apple", "Mango"];
+      fruit1.splice(0, 1);
+      console.log("====>", fruit1);
+      fruit2.splice(0, 2);
+      console.log("=====>", fruit2);
+      fruit3.splice(0, 1);
+      fruit3.splice(4, 1);
+      console.log("fruits===>", fruit3);
+      // 13. Insert ‘Wednesday’ to ['Monday', 'Tuesday' 'Thursday',
+      // 'Friday', 'Saturday', 'Sunday'] at right position (use splice)
+      const weeks = [
+        "Monday",
+        "Tuesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ];
+      weeks.splice(2, 0, "Wednesday");
+      console.log("add a day is ===>", weeks);
+      // 14. Insert ‘Raj’ before “Joe” in this ["Ani", "Sam", "Joe"] (use
+      // splice)
+      const name = ["Ani", "Sam", "Joe"];
+      name.splice(3, 0, "Raj");
+      console.log("add a new name==>", name);
+
+      // 15. Insert “Chess” at 3rd index
+      // ["Cricket","Basketball","Football","Badminton","Tennis"] (use splice)
+      const newGame = [
+        "Cricket",
+        "Basketball",
+        "Football",
+        "Badminton",
+        "Tennis",
+      ];
+      newGame.splice(3, 0, "chess");
+      console.log("add value is ===>", newGame);
+
+      // 16.Replace “Cricket” with “Swimming” in [Badminton, Basketball, Cricket,
+      // Football, Tennis] (use splice)
+      const games = [
+        "Badminton",
+        "Basketball",
+        "Cricket",
+        "Football",
+        "Tennis",
+      ];
+      console.log("original", games);
+      games.splice(2, 1, "Swimming");
+      console.log("add value is ===>", games);
+    </script>
+  </body>
+</html>
