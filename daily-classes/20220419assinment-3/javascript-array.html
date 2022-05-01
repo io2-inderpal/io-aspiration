@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assainment</title>
+    <title>Assignment</title>
   </head>
   <body>
-    <h1>Array & Object Assainment</h1>
+    <h1>Array & Object Assignment</h1>
     <script>
       // 1. print the age of candidates who are greater than 27
       // 2. Make an array of accounting, sales, production, HR
@@ -51,15 +51,15 @@
       // ‘Charizard’, ‘Raticat’]
       // b. Add 5 at 6th index, 10 at 7th index [10, 12,4,1.2,4.,58,5.6,78,14,69]
 
-      const pokimons = [
+      const pokemons = [
         "Bulbasaur",
         "Charmander",
         "Butterfree",
         "Charizard",
         "Raticat",
       ];
-      pokimons.splice(3, 0, "Pikachu");
-      console.log("add pikachu in array==>", pokimons);
+      pokemons.splice(3, 0, "Pikachu");
+      console.log("add pikachu in array==>", pokemons);
       const numberArray = [10, 12, 4, 1.2, 4, 58, 5.6, 78, 14, 69];
       numberArray.splice(6, 0, 5);
       numberArray.splice(7, 0, 10);
@@ -68,6 +68,11 @@
       // a. Less than 12
       // b. Even Number
       // c. Less that 12 and even
+      const findElement = [13, 11, 15, 9, 7, 5, 8, 3, 1];
+      console.log(
+        "findElement",
+        findElement.find((ele) => ele < 12)
+      );
 
       // 3. Check if all elements in the array ["Banana", "Orange", "Apple",
       // "Mango"] is
@@ -75,6 +80,15 @@
       // b. Contains ‘A’ or ‘a’
       // c. Contains ‘i’
       // d. Contains ‘n’
+      const fruitsEle = ["Banana", "Orange", "Apple", "Mango"];
+      console.log(
+        "all fruits >= 5...",
+        fruitsEle.every((fruit) => fruit.length >= 5)
+      );
+      console.log(
+        "Fruits with A||a...",
+        fruitsEle.every((fruit) => fruit.includes("A") || fruit.includes("a"))
+      );
 
       // 4. Check if any elements in the array ["Banana", "Orange", "Apple",
       // "Mango"] is
@@ -92,7 +106,7 @@
 
       const assignment5 = [2, 4, 6, 8];
 
-      assignment5.reverse("");
+      assignment5.reverse();
       console.log("the reverse assignment ==>", assignment5);
 
       const assignment5b = [
@@ -105,18 +119,22 @@
       assignment5b.reverse("");
       assignment5b[2].reverse("");
       console.log("the reverse assignment ==>", assignment5b);
-      const assignment5c = ["h", "e", "l", "l", "o"];
 
+      // assignment 5.c
+      const assignment5c = ["h", "e", "l", "l", "o"];
       assignment5c.reverse("");
       console.log("the reverse assignment ==>", assignment5c);
+
       // 6. Make ['h', 'e', 'l', 'l', 'o'] as hello
       const alphaIs = ["h", "e", "l", "l", "o"];
       const joinAlpha = alphaIs.join("");
       console.log("the join alpha value is ==>", joinAlpha);
+
       // 7. Make [40, 100, 1, 5, 25, 10] as 40100152510
       const number1 = [40, 100, 1, 5, 25, 10];
       const num2 = number1.join("");
       console.log("the join number is===>", num2);
+
       // 8. Remove all nested Arrays and make it single array
       // a. [['01','Jan'],['02','Feb'],['03','Mar']]
       // b. ['Jan', [[[['Feb'], 'Mar'], 'Apr'], [['May', 'June'],
@@ -138,9 +156,11 @@
       ];
       const removeNest = nestedArray.flat();
       console.log("nested array==>", removeNest);
+
       const removeNest1 = nestedArray1.flat();
       const deepNest = removeNest1.flat();
       console.log("nested array 2nd==>", deepNest.flat().flat());
+
       const veryDeepNested = [
         [[1, [11181]]],
         [[1, [111211]]],
@@ -154,6 +174,7 @@
       ];
       const deepNested2 = veryDeepNested.flat();
       console.log("very very deep nest===>", deepNested2.flat().flat().flat());
+
       // 9. [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] change this
       // is array like
       // a. After 5th index all element will 0
@@ -162,17 +183,22 @@
       let number = [
         1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
       ];
-      const newNumber = number
-        .filter((num) => num < 6)
-        .map((num, index) => index * 0);
+      // console.log("...vinay..", number.fill(0, 5));
+      // const newNumber = number
+      //   .filter((num) => num > 6)
+      //   .map((num, index) => index * 0);
 
-      const newNumber2 = number
-        .filter((num) => num < 7)
-        .map((num, index) => index + 1 * 2);
-      console.log("this is the number", newNumber2);
+      // const newNumber2 = number.map((num, index) => {
+      //   if (index >= 6) {
+      //     return num * 2;
+      //   }
+      //   return num;
+      // });
+      // console.log("this is the number", newNumber2);
 
-      number.splice(9, 1, "vikings");
-      console.log("change", number);
+      console.log("vikings-->", number.fill("vikings", 9, 10));
+      // number.splice(9, 1, "vikings");
+
       // console.log("===.==>", num);
       // 10. Create an Empty Array with length of 10, which has only
       // one element.
@@ -182,8 +208,9 @@
 
       // 11. Create an Empty Array with length of 5, which has only one
       // element.
-      const array = ["Apple", "", "", "", ""];
-      console.log(array);
+      const array = Array(5);
+      array.push("abc");
+      console.log("abcs", array);
 
       // 12. Use some array Prototype to make following array
       // a. ["Banana", "Orange", "Apple", "Mango"] to [ "Orange",
@@ -198,13 +225,13 @@
       const fruit2 = ["Banana", "Orange", "Apple", "Mango"];
       const fruit3 = ["Cherry", "Litchi", "Banana", "Orange", "Apple", "Mango"];
       fruit1.splice(0, 1);
-      console.log("====>", fruit1);
+      console.log("fruit1====>", fruit1);
       fruit2.splice(0, 2);
-      console.log("=====>", fruit2);
+      console.log("fruit2=====>", fruit2);
       fruit3.splice(0, 1);
       fruit3.splice(4, 1);
-      console.log("fruits===>", fruit3);
-      // 13. Insert ‘Wednesday’ to ['Monday', 'Tuesday' 'Thursday',
+      console.log("fruits3===>", fruit3);
+      // 13. Insert ‘Wednesday’ to ['Monday', 'Tuesday', 'Thursday',
       // 'Friday', 'Saturday', 'Sunday'] at right position (use splice)
       const weeks = [
         "Monday",
@@ -216,10 +243,11 @@
       ];
       weeks.splice(2, 0, "Wednesday");
       console.log("add a day is ===>", weeks);
+
       // 14. Insert ‘Raj’ before “Joe” in this ["Ani", "Sam", "Joe"] (use
       // splice)
       const name = ["Ani", "Sam", "Joe"];
-      name.splice(3, 0, "Raj");
+      name.splice(2, 0, "Raj");
       console.log("add a new name==>", name);
 
       // 15. Insert “Chess” at 3rd index
