@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water wave</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .maindiv {
+        position: relative;
+        background-color: rgb(34, 32, 32);
+        width: 100%;
+        height: 100vh;
+      }
+      .wave {
+        position: absolute;
+        background-color: white;
+        bottom: 0;
+        width: 100%;
+        height: 40vh;
+        z-index: 10;
+      }
+      .wave1 {
+        background-color: rgba(223, 162, 162, 0.945);
+        animation: wave 4s ease-in-out infinite;
+      }
+      @keyframes wave {
+        0%,
+        100% {
+          clip-path: polygon(
+            0 17%,
+            14% 15%,
+            26% 20%,
+            33% 28%,
+            42% 35%,
+            55% 34%,
+            69% 33%,
+            81% 36%,
+            91% 44%,
+            100% 56%,
+            100% 100%,
+            0 100%
+          );
+        }
+        50% {
+          clip-path: polygon(
+            0 42%,
+            13% 48%,
+            26% 48%,
+            31% 39%,
+            41% 35%,
+            53% 34%,
+            64% 26%,
+            72% 19%,
+            86% 15%,
+            100% 16%,
+            100% 100%,
+            0 100%
+          );
+        }
+      }
+      .wave2 {
+        background-color: rgb(129, 164, 253);
+        animation: wave2 4s ease-in-out infinite;
+        animation-delay: 0.5s;
+      }
+      @keyframes wave2 {
+        0%,
+        100% {
+          clip-path: polygon(
+            0 17%,
+            14% 15%,
+            26% 20%,
+            33% 28%,
+            42% 35%,
+            55% 34%,
+            69% 33%,
+            81% 36%,
+            91% 44%,
+            100% 56%,
+            100% 100%,
+            0 100%
+          );
+        }
+        50% {
+          clip-path: polygon(
+            0 42%,
+            13% 48%,
+            26% 48%,
+            31% 39%,
+            41% 35%,
+            53% 34%,
+            64% 26%,
+            72% 19%,
+            86% 15%,
+            100% 16%,
+            100% 100%,
+            0 100%
+          );
+        }
+      }
+      .wave3 {
+        background-color: rgba(100, 247, 173, 0.979);
+        animation: wave3 4s ease-in-out infinite;
+        animation-delay: 1s;
+      }
+      @keyframes wave3 {
+        0%,
+        100% {
+          clip-path: polygon(
+            0 17%,
+            14% 15%,
+            26% 20%,
+            33% 28%,
+            42% 35%,
+            55% 34%,
+            69% 33%,
+            81% 36%,
+            91% 44%,
+            100% 56%,
+            100% 100%,
+            0 100%
+          );
+        }
+        50% {
+          clip-path: polygon(
+            0 42%,
+            13% 48%,
+            26% 48%,
+            31% 39%,
+            41% 35%,
+            53% 34%,
+            64% 26%,
+            72% 19%,
+            86% 15%,
+            100% 16%,
+            100% 100%,
+            0 100%
+          );
+        }
+      }
+      .wave4 {
+        background-color: rgb(223, 107, 107);
+        animation: wave4 4s ease-in-out infinite;
+        animation-delay: 1.5s;
+      }
+      @keyframes wave4 {
+        0%,
+        100% {
+          clip-path: polygon(
+            0 17%,
+            14% 15%,
+            26% 20%,
+            33% 28%,
+            42% 35%,
+            55% 34%,
+            69% 33%,
+            81% 36%,
+            91% 44%,
+            100% 56%,
+            100% 100%,
+            0 100%
+          );
+        }
+        50% {
+          clip-path: polygon(
+            0 42%,
+            13% 48%,
+            26% 48%,
+            31% 39%,
+            41% 35%,
+            53% 34%,
+            64% 26%,
+            72% 19%,
+            86% 15%,
+            100% 16%,
+            100% 100%,
+            0 100%
+          );
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+      <div class="wave wave3"></div>
+      <div class="wave wave4"></div>
+    </div>
+  </body>
+</html>

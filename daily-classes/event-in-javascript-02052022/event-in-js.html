@@ -44,6 +44,7 @@
           type="checkbox"
           id="flexSwitchCheckChecked"
           checked
+          onclick="toggleButton()"
         />
         <label class="form-check-label" for="flexSwitchCheckChecked"
           >click to change style</label
@@ -57,6 +58,26 @@
         license details.
       </p>
     </div>
-    <script></script>
+    <script>
+      let isToggled = false;
+      const mainDiv = document.querySelectorAll(".main");
+      const inputBox = document.querySelectorAll(".form-check-input");
+      const pTag = document.getElementsByTagName("p");
+      const h1Tag = document.getElementsByTagName("h1");
+      document.addEventListener("click", function toggleButton() {
+        isToggled = !isToggled;
+
+        if (isToggled) {
+          mainDiv[0].style.background = "rgb(180, 180, 194)";
+          pTag[0].style.color = "blue";
+          h1Tag[0].style.color = "white";
+        }
+        if (!isToggled) {
+          mainDiv[0].style.background = "red";
+          pTag[0].style.color = "white";
+          h1Tag[0].style.color = "yellow";
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wave</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        height: 100%;
+        overflow: hidden;
+        background-color: white;
+      }
+      h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: blue;
+      }
+      .maindiv {
+        height: 5%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: aquamarine;
+      }
+      .wave1 {
+        background: url(wave.svg);
+        position: absolute;
+        top: 19.8rem;
+        width: 640rem;
+        height: 19.8rem;
+        animation: wave1 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        transform: translate(0, 0, 0);
+      }
+      .wave2 {
+        position: absolute;
+        top: -17.5rem;
+        animation: wave2 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) 0.125s infinite;
+      }
+      @keyframes wave1 {
+        0% {
+          margin-left: 0rem;
+        }
+        100% {
+          margin-left: 160rem;
+        }
+      }
+      @keyframes wave2 {
+        0%,
+        100% {
+          transform: translate(0, -25px, 0);
+        }
+        50% {
+          transform: translate(0, 5px, 0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Water Wave</h1>
+    <div class="main">
+      <div class="wave wave1"></div>
+      <div class="wave wave2"></div>
+    </div>
+  </body>
+</html>
