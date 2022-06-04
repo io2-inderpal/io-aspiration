@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        align-items: center;
+        justify-content: space-between;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      @keyframes slider {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-25rem * 7));
+        }
+      }
+      .slid {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        top: 25rem;
+      }
+      .slid .slider-track {
+        animation: slider 30s linear infinite;
+        display: flex;
+        justify-content: space-around;
+        width: calc(25rem * 14);
+      }
+      .slid .slider-track .sliding-img img {
+        height: 6rem;
+        width: 20rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slid">
+      <div class="slider-track">
+        <div class="sliding-img"><img src="facebook.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="google.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="twitter.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="facebook.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="google.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="facebook.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="twitter.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="facebook.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="google.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="twitter.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="facebook.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="google.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="facebook.png" alt="logo" /></div>
+        <div class="sliding-img"><img src="twitter.png" alt="logo" /></div>
+      </div>
+    </div>
+  </body>
+</html>
